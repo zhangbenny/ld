@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+*.log
+new\ folder/
+
+.eslintrc
+package222.json
+
+# include folder of the bundle files
+bundle.js
+
