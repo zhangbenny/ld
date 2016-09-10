@@ -18,6 +18,11 @@ import IndexPage from './components/IndexPage'
 import store, { history } from './store';
 
 /*
+  Import CSS
+*/
+import css from './styles/style.styl'
+
+/*
   Rendering
   This is where we hook up the Store with our actual component and the router
 */

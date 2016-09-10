@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import NavbarTop from './NavbarTop'
-
-import css from './style.styl'
+import NavbarTop from '../NavbarTop'
 
 class Main extends Component {
 

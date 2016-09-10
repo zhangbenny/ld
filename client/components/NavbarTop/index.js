@@ -9,9 +9,8 @@ class NavbarTop extends Component {
         <div className="navbar-brand brand-container">
           <Link to="/"> <img className="brand-logo" src="logo.png" /> </Link>
         </div>
-        <h3 className="title"> What is Lorem Ipsum? </h3>
-        <button type="button" className="navbar-toggle collapsed">
-          <span className="sr-only"></span>
+        <h3 className="page-title"> {/* Should change this to a redux state */}What is Lorem Ipsum? </h3>
+        <button type="button" className="dropdown-icon">
           <span className="icon-bar"></span>
           <span className="icon-bar"></span>
           <span className="icon-bar"></span>

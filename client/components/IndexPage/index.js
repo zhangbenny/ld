@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NavbarLeft from '../NavbarLeft'
 import TabList from '../TabList'
+import Details from '../Details'
 
 class IndexPage extends Component {
 
@@ -8,7 +9,10 @@ class IndexPage extends Component {
     return (
       <div className="IndexPage">
         <NavbarLeft />
-        <TabList />
+        <div className="tablist-detail">
+          <TabList />
+          <Details />
+        </div>
       </div>
     );
   }
