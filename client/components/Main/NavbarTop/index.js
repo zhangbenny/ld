@@ -1,36 +1,22 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
 
 class NavbarTop extends Component {
   
   render() {
     return (
-      <Navbar>
-        <Navbar.Header>
-          <Navbar.Brand className="brand-container">
-            <Link to="/"> <img className="brand-logo" src="logo.png" /> </Link>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav>
-            <NavItem eventKey={1} href="#">Link</NavItem>
-            <NavItem eventKey={2} href="#">Link</NavItem>
-            <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1}>Action</MenuItem>
-              <MenuItem eventKey={3.2}>Another action</MenuItem>
-              <MenuItem eventKey={3.3}>Something else here</MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={3.3}>Separated link</MenuItem>
-            </NavDropdown>
-          </Nav>
-          <Nav pullRight>
-            <NavItem eventKey={1} href="#">Link Right</NavItem>
-            <NavItem eventKey={2} href="#">Link Right</NavItem>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>   
+      <div className="NavbarTop navbar navbar-default navbar-fixed-top">
+        <div className="navbar-brand brand-container">
+          <Link to="/"> <img className="brand-logo" src="logo.png" /> </Link>
+        </div>
+        <h3 className="title"> What is Lorem Ipsum? </h3>
+        <button type="button" className="navbar-toggle collapsed">
+          <span className="sr-only"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+        </button>
+      </div>
     )
   }
 

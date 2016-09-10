@@ -12,20 +12,10 @@ import 'babel-polyfill';
 */
 import App from './components/App';
 import Main from './components/Main';
-import NavbarLeft from './components/NavbarLeft'
+import IndexPage from './components/IndexPage'
 
 /* Import our data store */
 import store, { history } from './store';
-
-/*
-  Error Logging
-*/
-
-// import Raven from 'raven-js';
-// import { sentry_url } from './data/config';
-// if(window) {
-//   Raven.config(sentry_url).install();
-// }
 
 /*
   Rendering
@@ -36,10 +26,10 @@ render(
     { /* Tell the Router to use our enhanced history */ }
     <Router history={history}>
       <Route path="/" component={App}>
-        <IndexRoute component={NavbarLeft} />
+        <IndexRoute component={IndexPage} />
       </Route>
     </Router>
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('app')
 );
 

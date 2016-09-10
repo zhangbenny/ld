@@ -7,11 +7,13 @@ class NavbarLeft extends Component {
   render() {
     // Then we go ahead and return some JSX
     return (
-      <div className="NavbarLeft">
-        <CommandButton className="1"/>
-        <CommandButton className="2"/>
-        <CommandButton className="3"/>
-        <CommandButton className="4"/>
+      <div className="NavbarLeft-container">
+        <div className="NavbarLeft">
+          <CommandButton className="1"/>
+          <CommandButton className="2"/>
+          <CommandButton className="3"/>
+          <CommandButton className="4"/>
+        </div>
       </div>
     );
   }
