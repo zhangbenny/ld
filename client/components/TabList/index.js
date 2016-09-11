@@ -17,6 +17,8 @@ class TabList extends Component {
           <Tab className="8"/>
           <Tab className="9"/>
           <Tab className="10"/>
+          <Tab className="11"/>
+          <Tab className="12"/>
         </div>
       </div>
     );

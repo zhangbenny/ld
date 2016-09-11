@@ -5,9 +5,9 @@ class Details extends Component {
 
   render() {
     return (
-      <div className="Details">
+      <div className="Details-container">
         {/* Currently hard coded, Should be dependent on STATE*/}
-        <div className="detail-container">
+        <div className="Details">
           <h5 className="detail-title">
             <strong>Aenean Cursus effictur tellus sed luctus.</strong>
           </h5>
